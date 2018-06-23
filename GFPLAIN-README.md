@@ -44,8 +44,3 @@ See also the list of [contributors](https://github.com/your/project/contributors
 ## License
 
 The GFPLAIN v1.0 algorithms is released under the GNU GPL v3.
-
-## Acknowledgments
-
-* Salvatore Grimaldi contributed to the scientific idea of the hydrogeomorphic floodplain model.
-* Enrique Vivoni and Giuliano Di Baldassarre  are also gratefully acknowledged for the scientific support in working on Nardi et al. (2018) work.
