@@ -3,7 +3,7 @@ Global FloodPLAIN mapping using a geomorphic algorithm
 
 ## Getting Started
 
-This short README document will get you started in applying the geomorphic FloodPLAIN mapping algorithm GFPLAIN based on Nardi et al. (2018) 
+This short README document will get you started in applying the geomorphic FloodPLAIN mapping algorithm GFPLAIN based on Nardi et al. (2006, 2018) 
 
 ### Prerequisites
 
@@ -34,9 +34,10 @@ GFPLAIN is based on three phyton scripts:
 
 ## Authors
 
-The GFPLAIN is based on the original AML code developed by Fernando Nardi (see Nardi et al., 2006).
+The GFPLAIN is based on the original AML code developed by Fernando Nardi and conceived together with Salvatore Grimaldi (see Nardi et al., 2006).
 The actual phyton version was developed by Antonio Annis adapating and completely reprogramming the original code as in Nardi et al. (2018)
-* **Fernando Nardi** - *Original AML code* - [fnardi](https://github.com/fnardi)
+* **Fernando Nardi** - *Original AML code & Theoretical study conception* - [fnardi](https://github.com/fnardi)
+* **Salvatore Grimaldi** - *Theoretical study conception* - [Scholar profile](https://scholar.google.it/citations?user=WZ4OQcMAAAAJ&hl=en)
 * **Antonio Annis** - *Phyton programming for GFPLAIN v1.0* - [aannis](https://github.com/aannis)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
