@@ -25,11 +25,11 @@ GFPLAIN is based on three phyton scripts:
 3) GFPLAIN.py that is the core geomorphic floodplain algorithm producing the floodplain raster layer
 
 ## References
-- 2006) Nardi F., Vivoni E.R., Grimaldi S., Testing Floodplain Width Scaling Using A Hydrogeomorphic Delineation Method, Water Resources Research, 42, W09409, doi: 10.1029/2005WR004155, (2006).
-- 2007) Grimaldi S., Nardi F., Di Benedetto F., Istanbulluoglu E., Bras R.L. A physically-based method for removing pits in digital elevation models, Advances in Water Resources, 30,  2151–2158, (2007). 
-- 2008) Nardi F., Grimaldi S., Petroselli A., Santini M., Vivoni E.R. Hydrogeomorphic properties of simulated drainage patterns using DEMs: the flat area issue, Hydrological Sciences Journal 53(6), 2008, DOI: 10.1623/hysj.53.6.1176 (2008). 
-- 2013) Nardi F., Biscarini C., Di Francesco S., Manciola P. Ubertini L., Comparing a large scale DEM-based floodplain delineation algorithm with standard flood maps: the Tiber river basin case study, Journal of Irrigation and Drainage, Volume 62, Issue S2, Pages 11-19 DOI 10.1002/ird.1819, (2013).
-- 2018) Nardi F, Morrison RR, Annis A, Grantham TE. Hydrologic scaling for hydrogeomorphic floodplain mapping: Insights into human‐induced floodplain disconnectivity. River Res Applic. 2018;1–11. https://doi.org/10.1002/rra.3296
+2006) Nardi F., Vivoni E.R., Grimaldi S., Testing Floodplain Width Scaling Using A Hydrogeomorphic Delineation Method, Water Resources Research, 42, W09409, doi: 10.1029/2005WR004155, (2006).
+2007) Grimaldi S., Nardi F., Di Benedetto F., Istanbulluoglu E., Bras R.L. A physically-based method for removing pits in digital elevation models, Advances in Water Resources, 30,  2151–2158, (2007). 
+2008) Nardi F., Grimaldi S., Petroselli A., Santini M., Vivoni E.R. Hydrogeomorphic properties of simulated drainage patterns using DEMs: the flat area issue, Hydrological Sciences Journal 53(6), 2008, DOI: 10.1623/hysj.53.6.1176 (2008). 
+2013) Nardi F., Biscarini C., Di Francesco S., Manciola P. Ubertini L., Comparing a large scale DEM-based floodplain delineation algorithm with standard flood maps: the Tiber river basin case study, Journal of Irrigation and Drainage, Volume 62, Issue S2, Pages 11-19 DOI 10.1002/ird.1819, (2013).
+2018) Nardi F, Morrison RR, Annis A, Grantham TE. Hydrologic scaling for hydrogeomorphic floodplain mapping: Insights into human‐induced floodplain disconnectivity. River Res Applic. 2018;1–11. https://doi.org/10.1002/rra.3296
 
 
 ## Authors
