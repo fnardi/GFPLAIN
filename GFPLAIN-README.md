@@ -37,7 +37,7 @@ The GFPLAIN is based on the original AML code developed by Fernando Nardi and co
 The actual phyton version was developed by Antonio Annis adapating and completely reprogramming the original code as in Nardi et al. (2018)
 * **Fernando Nardi** - *Original AML code & Theoretical study conception* - [fnardi](https://github.com/fnardi)
 * **Salvatore Grimaldi** - *Theoretical study conception* - [Scholar profile](https://scholar.google.it/citations?user=WZ4OQcMAAAAJ&hl=en)
-* **Antonio Annis** - *Phyton programming for GFPLAIN v1.0* - [aannis](https://github.com/aannis)
+* **Antonio Annis** - *Phyton programming for GFPLAIN v1.0* - [aannis](https://github.com/antonioannis)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
