@@ -1,21 +1,21 @@
-/***************************************************************************
-GFPLAIN Global FloodPLAIN mapping using a geomorphic algorithm 
-A ESRI-based GIS plugin
--------------------
-version                : 1.0
-authors                : Fernando Nardi, Antonio Annis
-contact                : fernando.nardi@unistrapg.it; antonio.annis@unistrapg.it 
-Research group website : http://www.gistar.org
-***************************************************************************/
-    
-/***************************************************************************
-*                                                                         *
-*   This program is free software; you can redistribute it and/or modify  *
-*   it under the terms of the GNU General Public License as published by  *
-*   the Free Software Foundation; either version 2 of the License, or     *
-*   (at your option) any later version.                                   *
-*                                                                         *
-***************************************************************************/
+##/***************************************************************************
+##GFPLAIN Global FloodPLAIN mapping using a geomorphic algorithm 
+##A ESRI-based GIS plugin
+##-------------------
+##version                : 1.0
+##authors                : Fernando Nardi, Antonio Annis
+##contact                : fernando.nardi@unistrapg.it; antonio.annis@unistrapg.it 
+##Research group website : http://www.gistar.org
+##***************************************************************************/
+##    
+##/***************************************************************************
+##*                                                                         *
+##*   This program is free software; you can redistribute it and/or modify  *
+##*   it under the terms of the GNU General Public License as published by  *
+##*   the Free Software Foundation; either version 2 of the License, or     *
+##*   (at your option) any later version.                                   *
+##*                                                                         *
+##***************************************************************************/
 
 #-------------------------------------------
 # GFPLAIN - PREPROCESSING
@@ -51,10 +51,10 @@ try:
         suff_ord = suff_ord.replace(".","")
         
     #GETTING THE NAME OF THE DEM
-    DEM_name = os.path.basename(DEM)
+    DEM_name = os.path.basename(DEM).split('.')[0]
     ldn=len(DEM_name)
     #Current working directory
-    DEM_path=DEM[:-(ldn+1)]
+    DEM_path = os.path.dirname(DEM)   
     pixelsize_ob = arcpy.GetRasterProperties_management (DEM, "CELLSIZEX")#get the cellsize of SINK grid
     pixelsize = float( pixelsize_ob.getOutput(0) )
     cellarea = pixelsize ** 2                            #calculate the cell area
@@ -174,4 +174,6 @@ except:
      
     arcpy.AddError(arcpy.GetMessages())
     arcpy.AddMessage(traceback.format_exc()) 
+
+
 
