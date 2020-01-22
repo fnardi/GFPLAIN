@@ -1,21 +1,21 @@
-/***************************************************************************
-GFPLAIN Global FloodPLAIN mapping using a geomorphic algorithm 
-A ESRI-based GIS plugin
--------------------
-version                : 1.0
-authors                : Fernando Nardi, Antonio Annis
-contact                : fernando.nardi@unistrapg.it; antonio.annis@unistrapg.it 
-Research group website : http://www.gistar.org
-***************************************************************************/
-    
-/***************************************************************************
-*                                                                         *
-*   This program is free software; you can redistribute it and/or modify  *
-*   it under the terms of the GNU General Public License as published by  *
-*   the Free Software Foundation; either version 2 of the License, or     *
-*   (at your option) any later version.                                   *
-*                                                                         *
-***************************************************************************/
+##/***************************************************************************
+##GFPLAIN Global FloodPLAIN mapping using a geomorphic algorithm 
+##A ESRI-based GIS plugin
+##-------------------
+##version                : 1.0
+##authors                : Fernando Nardi, Antonio Annis
+##contact                : fernando.nardi@unistrapg.it; antonio.annis@unistrapg.it 
+##Research group website : http://www.gistar.org
+##***************************************************************************/
+##    
+##/***************************************************************************
+##*                                                                         *
+##*   This program is free software; you can redistribute it and/or modify  *
+##*   it under the terms of the GNU General Public License as published by  *
+##*   the Free Software Foundation; either version 2 of the License, or     *
+##*   (at your option) any later version.                                   *
+##*                                                                         *
+##***************************************************************************/
 
 #-------------------------------------------
 # HYDROBASE.py
@@ -157,3 +157,4 @@ except:
     arcpy.AddError(arcpy.GetMessages())
     arcpy.AddMessage(traceback.format_exc()) 
     #print arcpy.GetMessages()
+
