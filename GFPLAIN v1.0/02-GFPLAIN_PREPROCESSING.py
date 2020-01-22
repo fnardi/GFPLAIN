@@ -37,7 +37,7 @@ arcpy.CheckOutExtension("Spatial")
 try:
 
 
-    #INPUT ARGIMENTS
+    #INPUT ARGUMENTS
     DEM =        arcpy.GetParameterAsText(0)     # DEM Name
     Folder =     arcpy.GetParameterAsText(1)     # Folder Name for the results
     Code = arcpy.GetParameterAsText(2)     # Short Name of the Basin
