@@ -1,21 +1,21 @@
-/***************************************************************************
-GFPLAIN Global FloodPLAIN mapping using a geomorphic algorithm 
-A ESRI-based GIS plugin
--------------------
-version                : 1.0
-authors                : Fernando Nardi, Antonio Annis
-contact                : fernando.nardi@unistrapg.it; antonio.annis@unistrapg.it 
-Research group website : http://www.gistar.org
-***************************************************************************/
-    
-/***************************************************************************
-*                                                                         *
-*   This program is free software; you can redistribute it and/or modify  *
-*   it under the terms of the GNU General Public License as published by  *
-*   the Free Software Foundation; either version 2 of the License, or     *
-*   (at your option) any later version.                                   *
-*                                                                         *
-***************************************************************************/
+##/***************************************************************************
+##GFPLAIN Global FloodPLAIN mapping using a geomorphic algorithm 
+##A ESRI-based GIS plugin
+##-------------------
+##version                : 1.0
+##authors                : Fernando Nardi, Antonio Annis
+##contact                : fernando.nardi@unistrapg.it; antonio.annis@unistrapg.it 
+##Research group website : http://www.gistar.org
+##***************************************************************************/
+##    
+##/***************************************************************************
+##*                                                                         *
+##*   This program is free software; you can redistribute it and/or modify  *
+##*   it under the terms of the GNU General Public License as published by  *
+##*   the Free Software Foundation; either version 2 of the License, or     *
+##*   (at your option) any later version.                                   *
+##*                                                                         *
+##***************************************************************************/
 
 #-------------------------------------------
 #  GFPLAIN.py
@@ -75,8 +75,7 @@ try:
 
     WAT_FL = FP_path + "\\"+ Code + "_watfl"
     WAT_HGD = FP_path + "\\"+ Code + "_wathgd"
-    FPL_GRD = FP_path + "\\"+ Code + "_fpl"
-    FPL_DEPTH = FP_path + "\\"+ Code + suff + "_dep" 
+    FPL_GRD = FP_path + "\\"+ Code + "_fpl"+ suff 
     FPL1 = FP_path + "\\"+ Code + "_fpl1" + suff + ".shp"
     FPL2 = FP_path + "\\"+ Code + "_fp2" + suff + ".shp"
     FPL = FP_path + "\\"+ Code + "_fpl" + suff + ".shp"
@@ -103,10 +102,6 @@ try:
     outCon = Con(Raster(DEM_DIFF)<= Raster(WAT_HGD) ,1 )
     outCon.save(FPL_GRD)
 
-    #Filterinf positive values
-    outCon = Con(Raster(DEM_DIFF)<= Raster(WAT_HGD) ,(Raster(WAT_HGD)-Raster(DEM_DIFF))/100 )
-    outCon.save(FPL_DEPTH)
-    
     #Creating the polyogon from the raster
     arcpy.RasterToPolygon_conversion(FPL_GRD, FPL1,"SIMPLIFY")
     arcpy.EliminatePolygonPart_management(FPL1, FPL2, "AREA", cellarea*10000, "", "CONTAINED_ONLY")
@@ -127,7 +122,6 @@ try:
     
     arcpy.Delete_management(WAT_FL)
     arcpy.Delete_management(WAT_HGD)
-    arcpy.Delete_management(FPL_GRD)
     arcpy.Delete_management(FPL1)
     arcpy.Delete_management(FPL2)
 
@@ -158,4 +152,6 @@ except:
      
     arcpy.AddError(arcpy.GetMessages())
     arcpy.AddMessage(traceback.format_exc()) 
+
+
 
